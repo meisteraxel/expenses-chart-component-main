@@ -14,7 +14,7 @@ function Spending() {
             </div>
             <div
               className="bar"
-              style={{ height: `${item.amount * 2}px` }}
+              style={{ height: `${item.amount * 3}px` }}
             ></div>
           </div>
         ))}
