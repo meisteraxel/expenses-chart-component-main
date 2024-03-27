@@ -3,17 +3,20 @@ import "../style.css";
 import data from "../assets/data.json";
 
 function Spending() {
+  const currentDate = new Date();
+  const currentDay = currentDate.getDay();
+
   return (
     <div className="spending-container">
       <h2>Spending - Last 7 days</h2>
       <div className="charts">
-        {data.map((item) => (
+        {data.map((item, index) => (
           <div>
             <div className="popup">
               <p>${item.amount}</p>
             </div>
             <div
-              className="bar"
+              className={`bar ${currentDay === index + 1 ? "today" : ""}`}
               style={{ height: `${item.amount * 3}px` }}
             ></div>
           </div>
