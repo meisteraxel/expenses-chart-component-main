@@ -18,7 +18,7 @@ function Total() {
         <h2>${totalAmount}</h2>
       </div>
       <div>
-        <h4>+2.4%</h4>
+        <h3>+2.4%</h3>
         <p>from last month</p>
       </div>
     </div>

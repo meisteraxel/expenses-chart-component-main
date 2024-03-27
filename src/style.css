@@ -142,9 +142,10 @@ hr {
   color: var(--dark-brown);
 }
 
-.total-container h4 {
+.total-container h3 {
   text-align: end;
   color: var(--dark-brown);
+  font-size: 1rem;
 }
 
 .total-container p {
