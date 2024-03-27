@@ -81,7 +81,7 @@ main {
   align-items: center;
 }
 
-.charts div:hover .popup {
+.single-chart-container:hover .popup {
   opacity: 1;
 }
 
@@ -105,6 +105,10 @@ main {
   width: 50px;
   cursor: pointer;
   width: 85%;
+}
+
+.bar:hover {
+  opacity: 0.5;
 }
 
 .popup {
