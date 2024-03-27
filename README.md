@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/meisteraxel/expenses-chart-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://github.com/meisteraxel/expenses-chart-component-main)
+- [Live site URL](https://your-live-site-url.com)
 
 ## My process
 
