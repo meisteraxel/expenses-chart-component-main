@@ -9,12 +9,19 @@ function Spending() {
       <div className="charts">
         {data.map((item) => (
           <div>
-            <p>{item.day}</p>
+            <div className="popup">
+              <p>${item.amount}</p>
+            </div>
             <div
               className="bar"
-              style={{ height: `${item.amount * 5}px` }}
+              style={{ height: `${item.amount * 2}px` }}
             ></div>
           </div>
+        ))}
+      </div>
+      <div className="days">
+        {data.map((item) => (
+          <p>{item.day}</p>
         ))}
       </div>
       <hr />

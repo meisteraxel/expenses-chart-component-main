@@ -49,7 +49,7 @@ body {
   font-size: 1.8rem;
 }
 
-.spending-container {
+.chart-container {
   padding: 25px;
   background-color: white;
   margin: 20px 0px;
@@ -58,24 +58,50 @@ body {
 
 .charts {
   display: flex;
-  height: 500px;
+  height: 200px;
   align-items: flex-end;
   justify-content: space-evenly;
   text-align: center;
   margin-bottom: 10px;
-  column-gap: 20px;
+}
+
+.days {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.days p {
+  width: 50px;
+  text-align: center;
+  color: var(--medium-brown);
+  font-size: 0.9rem;
 }
 
 .bar {
   background-color: var(--soft-red);
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 5px;
   width: 50px;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out;
 }
 
-.charts > div > p {
+.bar:hover {
+  background-color: var(--cyan);
+}
+
+.popup {
   background-color: var(--dark-brown);
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   opacity: 1;
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.total-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
