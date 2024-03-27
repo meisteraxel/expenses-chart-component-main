@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--cream);
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.balance-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 540px;
+  height: 120px;
+  border-radius: 20px;
+  padding: 25px;
+  color: var(--cream);
+  background-color: var(--soft-red);
+}
+
+.balance-container h1 {
+  font-size: 1rem;
+}
+
+.balance-container h2 {
+  font-size: 1.8rem;
+}
+
+.spending-container {
+  padding: 25px;
+  background-color: white;
+  margin: 20px 0px;
+  border-radius: 20px;
+}
+
+.charts {
+  display: flex;
+  height: 500px;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 10px;
+  column-gap: 20px;
+}
+
+.bar {
+  background-color: var(--soft-red);
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 50px;
+}
+
+.charts > div > p {
+  background-color: var(--dark-brown);
+  color: white;
+  border-radius: 10px;
+  opacity: 1;
+}
