@@ -29,6 +29,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  padding: 0px 20px;
+}
+
 .balance-container {
   display: flex;
   align-items: center;
@@ -71,7 +75,7 @@ body {
   margin-top: 20px;
 }
 
-.charts div {
+.single-chart-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +92,7 @@ body {
 }
 
 .days p {
-  width: 50px;
+  width: 100%;
   text-align: center;
   color: var(--medium-brown);
   font-size: 0.8rem;
@@ -100,6 +104,7 @@ body {
   margin-top: 5px;
   width: 50px;
   cursor: pointer;
+  width: 85%;
 }
 
 .popup {
@@ -112,6 +117,7 @@ body {
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.2s ease-out;
+  width: 100%;
 }
 
 hr {
@@ -143,4 +149,69 @@ hr {
 
 .today {
   background-color: var(--cyan) !important;
+}
+
+@media (max-width: 630px) {
+  .balance-container {
+    padding: 20px;
+    width: 375px;
+  }
+
+  .chart-container {
+    padding: 30px 20px;
+    width: 375px;
+  }
+
+  .single-chart-container {
+    width: 40px;
+  }
+
+  .popup {
+    font-size: 0.5rem;
+    padding: 5px 0px;
+  }
+
+  .days {
+    gap: 10px;
+  }
+
+  .spending-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .total-container h2 {
+    font-size: 2rem;
+  }
+
+  .total-container p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .balance-container {
+    padding: 10px;
+    width: 300px;
+  }
+
+  main {
+    padding: 0px 5px;
+  }
+
+  .chart-container {
+    padding: 20px 15px;
+    width: 300px;
+  }
+
+  .spending-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .total-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .total-container p {
+    font-size: 0.8rem;
+  }
 }

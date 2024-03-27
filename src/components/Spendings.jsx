@@ -11,7 +11,7 @@ function Spending() {
       <h2>Spending - Last 7 days</h2>
       <div className="charts">
         {data.map((item, index) => (
-          <div>
+          <div className="single-chart-container">
             <div className="popup">
               <p>${item.amount}</p>
             </div>
